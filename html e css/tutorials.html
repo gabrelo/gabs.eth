@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Mobile</title>
+    <link rel="stylesheet" href="./styletutorials.css" />
+  </head>
+
+  <body>
+    <header id="header">
+      <a id="logo" href="">CRYPTO GABS</a>
+      <nav id="nav">
+        <button
+          aria-label="Abrir Menu"
+          id="btn-mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          Menu
+          <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cryptoc.html">Cryptocurrencies</a></li>
+          <li><a href="metac.html">Metaverse</a></li>
+          <li><a href="nfts.html">NFTs</a></li>
+          <li><a href="web3.html">Web 3.0</a></li>
+          <li><a href="tutorials.html">Tutorials</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <style>
+      body {
+        background: rgb(102, 94, 255);
+      }
+    </style>
+
+    <div class="container">
+      <video
+        width="500"
+        controls
+        loop
+        poster="../img/tutos/blockchainexplained.jpg"
+        source
+        src="../video/tutos/Basic Blockchain EXPLAINED.mp4"
+        type="video/mp4"
+      ></video>
+
+      <video
+        width="500"
+        controls
+        loop
+        poster="../img/tutos/Bitcoin-Explained-Like-I39m-5-With-Animations.jpg"
+        source
+        src="../video/tutos/Bitcoin Explained Like I'm 5 (With Animations).mp4"
+        type="video/mp4"
+      ></video>
+
+      <video
+        width="500"
+        controls
+        loop
+        poster="../img/tutos/dao_img_asset.png"
+        source
+        src="../video/tutos/What is a DAO.mp4"
+        type="video/mp4"
+      ></video>
+
+      <video
+        width="500"
+        controls
+        loop
+        poster="../img/tutos/What-is-Fantom-1.png"
+        source
+        src="../video/tutos/What Is Fantom.mp4"
+        type="video/mp4"
+      ></video>
+
+      <video
+        width="500"
+        controls
+        loop
+        poster="../img/tutos/fantokens.jpg"
+        source
+        src="../video/tutos/What Are FAN TOKENS.mp4"
+        type="video/mp4"
+      ></video>
+
+      <video
+        width="500"
+        controls
+        loop
+        poster="../img/tutos/deffi.png"
+        source
+        src="../video/tutos/What's DeFi 2.0.mp4"
+        type="video/mp4"
+      ></video>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="rodape">
+      <p>© Copyrights. All rights reserved. <a class="logotipo">gabs.eth</a></p>
+    </footer>
+
+    <script src="./menuresponsivo.js"></script>
+  </body>
+</html>

@@ -1,0 +1,236 @@
+body,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 1150px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  transition: 0.3s;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.05);
+  opacity: 0.7;
+}
+
+#logo {
+  font-size: 30px;
+  margin-left: 80px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #23232e;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  color: #fff;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+  letter-spacing: 3px;
+  margin-left: 10px;
+  color: #fff;
+}
+
+#btn-mobile {
+  display: none;
+  color: #ffffff;
+}
+
+/* TERMINA AQUI O MENU */
+
+.container {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  flex-wrap: wrap;
+  grid-gap: 10px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.box {
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px 0px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tradingview-widget-container {
+  padding-top: 20px;
+}
+
+/* ; #984B43 #233237 #18121E #eac67A
+ #94618E #49214A #F4DECB #F8EEE7 
+ #C5C1C0 #0A1612 #1A2930 #F7CE3E
+*/
+
+.btext {
+  color: #ffffff;
+}
+
+.title {
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.h1 {
+  border-bottom: #f8eee7;
+}
+
+.tuto {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.titulo {
+  border-top: #f8eee7;
+  border: #23232e;
+  text-align: center;
+  padding-top: 40px;
+  color: #fff;
+  text-align: center;
+  font-size: large;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1100px) {
+  .grafico {
+    width: 800;
+    height: 510;
+  }
+}
+
+@media (max-width: 1100px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #23232e;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.835);
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+
+/* footer */
+
+.rodape {
+  background-color: #23232e;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.logotipo {
+  color: #fff;
+  font-size: large;
+}
+
+@media (max-width: 1500px) {
+  .cards {
+    width: 600px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cards {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .cardprincipal {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+}

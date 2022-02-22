@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Mobile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./stylemeta.css" />
+  </head>
+
+  <body>
+    <header id="header">
+      <a id="logo" href="">GABS.ETH</a>
+      <nav id="nav">
+        <button
+          aria-label="Abrir Menu"
+          id="btn-mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          Menu
+          <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cryptoc.html">Cryptocurrencies</a></li>
+          <li><a href="metac.html">Metaverse</a></li>
+          <li><a href="nfts.html">NFTs</a></li>
+          <li><a href="web3.html">Web 3.0</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <style>
+      body {
+        background: url(../img/metaverse/nikeland-roblox-metaverse.png);
+      }
+    </style>
+
+    <div class="container">
+      <div class="videos1">
+        <video
+          width="500"
+          height="350"
+          controls
+          loop
+          poster="../img/metaverse/mana.png"
+          source
+          src="../video/manavideo.mp4"
+          type="video/mp4"
+        ></video>
+      </div>
+      <div class="box">
+        <h1>What Is Decentraland?</h1>
+        Decentraland (MANA) defines itself as a virtual reality platform powered
+        by the Ethereum blockchain that allows users to create, experience, and
+        monetize content and applications. In this virtual world, users purchase
+        plots of land that they can later navigate, build upon and monetize.
+        <p>
+          Decentraland was launched following a $24 million initial coin
+          offering (ICO) that was conducted in 2017.
+        </p>
+        <p>
+          The virtual world launched its closed beta in 2019 and opened to the
+          public in February 2020. Since then, users have created a wide range
+          of experiences on their parcels of LAND, including interactive games,
+          sprawling 3D scenes and a variety of other interactive experiences.
+        </p>
+        <button class="btn">
+          <a href="https://opensea.io/collection/decentraland">BUY A LAND</a>
+        </button>
+      </div>
+
+      <div class="videos2">
+        <video
+          width="500"
+          height="350"
+          controls
+          loop
+          poster="../img/metaverse/sand.jpg"
+          source
+          src="../video/sandvideo.mp4"
+          type="video/mp4"
+        ></video>
+      </div>
+      <div class="box">
+        <h1>What Is The Sandbox?</h1>
+        Launched in 2011 by Pixowl, The Sandbox is a blockchain-based virtual
+        world allowing users to create, build, buy and sell digital assets in
+        the form of a game. By combining the powers of decentralized autonomous
+        organizations (DAO) and non-fungible tokens (NFTs), the Sandbox creates
+        a decentralized platform for a thriving gaming community. According to
+        the official whitepaper, the Sandbox platform’s main mission is to
+        introduce blockchain technology in mainstream gaming successfully.
+        <p>
+          The platform focuses on facilitating a creative “play-to-earn” model,
+          which allows users to be both creators and gamers simultaneously. The
+          Sandbox employs the powers of blockchain technology by introducing the
+          SAND utility token, which facilitates transactions on the platform.
+        </p>
+        <button class="btn">
+          <a href="https://opensea.io/collection/sandbox">BUY A LAND</a>
+        </button>
+      </div>
+    </div>
+
+    <div class="marks">
+      <div class="titlemarks">
+        <h3>Marks that are already in the metaverse:</h3>
+      </div>
+      <img src="../img/metaverse/Nike-Logo.png" alt="" />
+      <img src="../img/metaverse//vans.png" alt="" />
+      <img src="../img/metaverse/fornite.png" alt="" />
+      <img src="../img/metaverse/itau.png" alt="" />
+      <img src="../img/metaverse/atari.png" alt="" />
+      <img src="../img/metaverse/gucci.png" alt="" />
+      <img src="../img/metaverse/stella.png" alt="" />
+      <img src="../img/metaverse/renner.png" alt="" />
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="rodape">
+      <p class="footer">
+        © Copyrights. All rights reserved. <a class="logotipo">gabs.eth</a>
+      </p>
+    </footer>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".txt1"));
+    </script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".txt2"));
+    </script>
+    <script src="./menuresponsivo.js"></script>
+  </body>
+</html>

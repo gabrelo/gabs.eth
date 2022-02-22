@@ -1,0 +1,172 @@
+body,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 1150px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  transition: 0.3s;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.05);
+  opacity: 0.7;
+}
+
+#logo {
+  font-size: 30px;
+  margin-left: 80px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #23232e;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  color: #fff;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+  letter-spacing: 3px;
+  margin-left: 10px;
+  color: #fff;
+}
+
+#btn-mobile {
+  display: none;
+  color: #ffffff;
+}
+
+/* TERMINA AQUI O MENU */
+
+.owl-carousel img {
+  margin-top: 20px;
+}
+
+#botao_anterior,
+#botao_proximo {
+  position: absolute;
+  top: 200px;
+}
+
+#botao_anterior {
+  left: 220px;
+}
+
+#botao_proximo {
+  right: 220px;
+}
+
+.bg {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 0.5rem 0.5rem;
+  border-radius: 20px;
+  max-width: 100%;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 1100px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #23232e;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.835);
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+
+/* footer */
+
+.rodape {
+  background-color: #23232e;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.logotipo {
+  color: #fff;
+  font-size: large;
+}
